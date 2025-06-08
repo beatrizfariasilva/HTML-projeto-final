@@ -1,55 +1,116 @@
 <!DOCTYPE html>
-<html lang = "pt-br"
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title> Restaurantes </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurantes</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
+
 <body>
     <!----------CABEÇALHO-------------->
     <header class="navbar">
-        <nav class="nav-container">
-            <a href="#" class="logo">
-                <img src="imagens/logo.png">
-            </a>    
-            <ul class="nav-links">
-                <li> <a> Página inicial </a></li>
-                <li> <a href="passeios.html">Passeios</a></li>
-                <li> <a href="restaurantes.html">Restaurantes</a></li>
-                <li> <a> Hotéis </a></li>
-                <li> <a> Pontos Turísticos </a></li>
-            </ul>
+        <img src="imagens/logo.png" alt=" RecTravel Logo" />
+        <nav>
+            <a href="paginainicial.html">Página inicial</a>
+            <a href="passeios.html">Passeios</a>
+            <a href="restaurantes.html">Restaurantes</a>
+            <a href="hoteis.html">Hotéis</a>
+            <a href="pontosturiscos.html">Pontos Turísticos</a>
         </nav>
     </header>
-    <div class="container">
-    <!----------SEÇÃO 1-------------->
-    <section>
-        <img src="imagens/parraxaxa.jpg" width="300">
-        <h2> Parraxaxá </h2>
-        <p> Ponto de parada obrigatório para quem quer experimentar o melhor da culinária nordestida numa proposta mais diúrna </p>
-        <button class="botao"> Mostrar Mais </button>
-    </section>
-    <!----------SEÇÃO 2-------------->
-    <section>
-        <img src="imagens/moendonalaje.jpg" width="300">
-        <h2> Moendo na Laje </h2>
-        <p> Localizado no coração de Recife, o Moendo na Laje é o restaurante ideal para quem busca uma comida inovadora mas sem perder o toque nordestino </p>
-        <button class="botao"> Mostrar Mais </button>
-    </section>
-    <!----------SEÇÃO 3-------------->
-    <section>
-        <img src="imagens/cais.jpg" width="300">
-        <h2> Cais Rooftop Lounge </h2>
-        <p> Para quem deseja uma experiência sofisticada, o Cais Rooftop oferece alta gastronomia, um ambiente moderno e tudo isso com uma vista espetacular para o Recife Antigo. </p>
-        <button class="botao"> Mostrar Mais </button>
-    </section>
-    <!----------SEÇÃO 4-------------->
-    <section>
-        <img src="imagens/caja.jpg" width="300">
-        <h2> Ca-Já Restaurante </h2>
-        <p> Esse restaurante vai muito além de um ambiente acolhedor. Com uma proposta autoral, o restaurante surpreende com a mistura única entre pratos modernos e culinária local.</p>
-        <button class="botao"> Mostrar Mais </button>
-    </section>
-</div>
+
+    <div class="hero-section">
+        <div class="text-content">
+            <h2>Escolha sua<br><strong>própria jornada.</strong></h2>
+            <p>Explorar Recife é também saborear sua rica gastronomia. Da tradicional carne de sol com macaxeira aos
+                frutos do mar frescos à beira-mar, cada restaurante revela um pedaço da cultura pernambucana. Descubra
+                os sabores autênticos, os temperos marcantes e os lugares mais acolhedores para uma experiência
+                culinária inesquecível.
+                Explore nossa seleção de restaurantes em Recife e descubra onde o sabor encontra a tradição.
+            </p>
+            <button class="veja-mais">Veja mais</button>
+        </div>
+        <div class="container">
+            <!----------SEÇÃO 1-------------->
+            <div class="card">
+                <img src="imagens/parraxaxa.jpg" alt="Restaurante Parraxaxá">
+                <div class="card-content">
+                    <h3> Parraxaxá </h3>
+                        <a href="https://www.parraxaxa.com.br/"
+                        target="_blank">
+                        <button> Mostrar mais </button>
+                    </a>
+                </div>
+            </div>
+            <!----------SEÇÃO 2-------------->
+            <div class="card">
+                <img src="imagens/moendonalaje.jpg">
+                <div class="card-content">
+                    <h3> Moendo na Laje </h3>
+                    <a href="https://www.instagram.com/moendonalaje/"
+                        target="_blank">
+                        <button> Mostrar mais </button>
+                    </a>
+                </div>
+            </div>
+            <!----------SEÇÃO 3-------------->
+            <div class="card">
+                <img src="imagens/cais.jpg">
+                <div class="card-content">
+                    <h3> Cais Rooftop Lounge </h3>
+
+                    <a href="https://www.instagram.com/caisrooftop/?hl=pt"
+                        target="_blank">
+                        <button> Mostrar mais </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>RecTravel</h4>
+                <p>Descubra os melhores passeios, restaurantes e hospedagens em Recife.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Links Rápidos</h4>
+                <ul>
+                    <li><a href="páginaInicial.html">Início</a></li>
+                    <li><a href="passeios.html">Passeios</a></li>
+                    <li><a href="restaurantes.html">Restaurantes</a></li>
+                    <li><a href="hóteis.html">Hotéis</a></li>
+                    <li><a href="PontosTuriscos.html">Pontos Turísticos</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contato</h4>
+                <p>Email: contato@rectravel.com</p>
+                <p>Fone: (81) 99999-9999</p>
+            </div>
+            <div class="footer-section">
+                <h4>Envie uma mensagem</h4>
+                <form id="whatsappForm" onsubmit="enviarmensagem(event)" class="footer-form">
+                    <div class="form-group">
+                        <label for="nome">Seu nome:</label>
+                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" rows="3" placeholder="Digite sua mensagem"
+                            required></textarea>
+                    </div>
+                    <button type="submit" class="btn-whatsapp">Enviar via WhatsApp</button>
+                </form>
+            </div>
+        </div>
+
+    </footer>
+
+
 </body>
+
 </html>

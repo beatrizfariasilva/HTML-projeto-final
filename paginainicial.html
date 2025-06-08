@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial</title>
+    <link rel=stylesheet href="style.css">
+</head>
+
+<body>
+    <!----------CABEÇALHO-------------->
+    <header class="navbar">
+        <img src="imagens/logo.png" alt=" RecTravel Logo" />
+        <nav>
+            <a href="paginainicial.html">Página inicial</a>
+            <a href="passeios.html">Passeios</a>
+            <a href="restaurantes.html">Restaurantes</a>
+            <a href="hoteis.html">Hotéis</a>
+            <a href="pontosturiscos.html">Pontos Turísticos</a>
+        </nav>
+    </header>
+
+    <!----------CARROSEL-------------->
+     <section class="carousel">
+        <div class="slides">
+            <div class="slide">
+            <img src="imagens/recifenoite.jpg" alt="">
+                <div class="text-overlay">
+                    <h2> </h2>
+                </div>
+            </div>
+            <div class="slide">
+            <img src="imagens/lagoa.jpg" alt="" >
+                <div class="text-overlay">
+                    <h2></h2>
+                </div> 
+            </div>
+            <div class="slide">
+            <img src="imagens/marcozero.jpg" alt="" >
+                <div class="text-overlay">
+                    <h2></h2>
+                </div> 
+            </div>
+            <div class="slide">
+            <img src="imagens/oe.jpeg" alt="" >
+                <div class="text-overlay">
+                    <h2></h2>
+                </div>
+            </div>
+            <div class="slide">
+            <img src="imagens/praias.jpg" alt="" >
+                <div class="text-overlay">
+                    <h2></h2>
+                </div>
+            </div>
+            <img src="imagens/arena.jpg" alt="" >
+                <div class="text-overlay">
+                    <h2></h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!----------QUEM SOMOS NÓS-------------->
+    <section class="intro">
+        <h1>Quem nós somos?</h1>
+        <p>O RecAndTravel nasceu para conectar você às melhores experiências em Recife.</p>
+     <div class="highlights">
+        <div class="card">
+            <img src="imagens/card-restaurantes.avif" alt="Restaurantes">
+            <h3>Melhores restaurantes</h3>
+            
+        </div>
+        <div class="card">
+            <img src="imagens/card-turismo.jpg" alt="Pontos Turísticos">
+            <h3>Pontos turísticos</h3>
+            
+        </div>
+        <div class="card">
+            <img src="imagens/card-hospedagem.webp" alt="Hospedagem">
+            <h3>Hospedagem</h3>
+            
+        </div>
+        <div class="card">
+            <img src="imagens/card-passeio.jpg" alt="Hospedagem">
+            <h3>Passeios</h3>
+            
+        </div>
+    </div>
+</section>
+
+<!----------EVENTOS-------------->
+<section class="eventos">
+    <h2>O que fazer nessa semana?</h2>
+    <br>
+    <table>
+        <thead>
+            <tr>
+                <th>Evento</th>
+                <th>Data</th>
+                <th>Local</th>
+                <th>Ingressos</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Festival de Música</td>
+                <td>15 de Junho</td>
+                <td>Parque Dona Lindu</td>
+                <td><a href="#">Comprar</a></td>
+            </tr>
+            <tr>
+                <td>Feira Gastronômica</td>
+                <td>18 de Junho</td>
+                <td>Marco Zero</td>
+                <td><a href="#">Saiba Mais</a></td>
+            </tr>
+            <tr>
+                <td>Exposição de Arte</td>
+                <td>20 de Junho</td>
+                <td>Museu Cais do Sertão</td>
+                <td><a href="#">Ingressos</a></td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+
+
+
+    <!----------RODAPÉ-------------->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>RecTravel</h4>
+                <p>Descubra os melhores passeios, restaurantes e hospedagens em Recife.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Links Rápidos</h4>
+                <ul>
+                    <li><a href="páginaInicial.html">Início</a></li>
+                    <li><a href="passeios.html">Passeios</a></li>
+                    <li><a href="restaurantes.html">Restaurantes</a></li>
+                    <li><a href="hóteis.html">Hotéis</a></li>
+                    <li><a href="PontosTuriscos.html">Pontos Turísticos</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contato</h4>
+                <p>Email: contato@rectravel.com</p>
+                <p>Fone: (81) 99999-9999</p>
+            </div>
+            <div class="footer-section">
+                <h4>Envie uma mensagem</h4>
+                <form id="whatsappForm" onsubmit="enviarmensagem(event)" class="footer-form">
+                    <div class="form-group">
+                        <label for="nome">Seu nome:</label>
+                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" rows="3" placeholder="Digite sua mensagem"
+                            required></textarea>
+                    </div>
+                    <button type="submit" class="btn-whatsapp">Enviar via WhatsApp</button>
+                </form>
+            </div>
+        </div>
+
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
